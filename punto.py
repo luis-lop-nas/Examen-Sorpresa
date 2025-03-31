@@ -1,6 +1,8 @@
 class Punto:
     
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
+        """Constructor que inicializa las coordenadas del punto.
+        Si no se proporcionan valores, se asigna 0 por defecto."""
         self.x = x
         self.y = y
 
@@ -30,5 +32,6 @@ class Punto:
         from math import sqrt
         distancia = sqrt((otro_punto.x - self.x) ** 2 + (otro_punto.y - self.y) ** 2)
         print(f"La distancia entre los puntos es: {distancia}")
+
 
 
