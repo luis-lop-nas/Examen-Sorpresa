@@ -7,8 +7,7 @@ def crear_puntos():
     B = Punto(5, 5)
     C = Punto(-3, -1)
     D = Punto(0, 0)
-    O = Punto(0, 0)
-    return A, B, C, D, O
+    return A, B, C, D
 
 def imprimir_puntos(A, B, C, D):
     # Imprimir los puntos
@@ -28,11 +27,11 @@ def consultar_vectores(A, B):
     print("El vector AB es:", A.vector(B))
     print("El vector BA es:", B.vector(A))
 
-def consultar_distancias(A, B, C, O):
+def consultar_distancias(A, B, C, D):
     # Calcular distancias al origen
-    distancia_A = A.distancia(O)
-    distancia_B = B.distancia(O)
-    distancia_C = C.distancia(O)
+    distancia_A = A.distancia(D)
+    distancia_B = B.distancia(D)
+    distancia_C = C.distancia(D)
 
     # Determinar el punto más lejano
     if distancia_A > distancia_B and distancia_A > distancia_C:
