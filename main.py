@@ -1,5 +1,10 @@
-from lanzador import Lanzador
+from lanzador import crear_puntos, imprimir_puntos, consultar_cuadrante, consultar_vectores, consultar_distancias, crear_rectangulo
 
 if __name__ == "__main__":
-    lanzador = Lanzador()
-    
+    crear_puntos()
+    imprimir_puntos()
+    consultar_cuadrante()
+    consultar_vectores()
+    consultar_distancias()
+    crear_rectangulo()
+        
