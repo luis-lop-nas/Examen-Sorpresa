@@ -32,6 +32,9 @@ def consultar_distancias(A, B, C, D):
     distancia_A = A.distancia(D)
     distancia_B = B.distancia(D)
     distancia_C = C.distancia(D)
+    print(f"La distancia entre los puntos es: {distancia_A}")
+    print(f"La distancia entre los puntos es: {distancia_B}")
+    print(f"La distancia entre los puntos es: {distancia_C}")
     # Determinar el punto más lejano
     if distancia_A > distancia_B and distancia_A > distancia_C:
         print("El punto A es el más lejano al origen.")

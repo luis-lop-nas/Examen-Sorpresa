@@ -31,7 +31,7 @@ class Punto:
     def distancia(self, otro_punto):
         from math import sqrt
         distancia = sqrt((otro_punto.x - self.x) ** 2 + (otro_punto.y - self.y) ** 2)
-        print(f"La distancia entre los puntos es: {distancia}")
+        return distancia
 
 
 
