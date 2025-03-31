@@ -32,7 +32,9 @@ def consultar_distancias(A, B, C, D):
     distancia_A = A.distancia(D)
     distancia_B = B.distancia(D)
     distancia_C = C.distancia(D)
-
+    float(distancia_A)
+    float(distancia_B)
+    float(distancia_C)
     # Determinar el punto más lejano
     if distancia_A > distancia_B and distancia_A > distancia_C:
         print("El punto A está más lejos del origen.")
