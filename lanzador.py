@@ -33,12 +33,9 @@ def consultar_distancias(A, B, C, D):
     distancia_B = B.distancia(D)
     distancia_C = C.distancia(D)
     # Determinar el punto más lejano
-    if distancia_A > distancia_B and distancia_A > distancia_C:
-        print("El punto A está más lejos del origen.")
-    elif distancia_B > distancia_A and distancia_B > distancia_C:
-        print("El punto B está más lejos del origen.")
-    else:
-        print("El punto C está más lejos del origen.")
+    distancia = [distancia_A, distancia_B, distancia_C]
+    distancia.sort()
+    print("La distancia más lejana es:", distancia[-1])
 
 def crear_rectangulo(A, B):
     
