@@ -2,12 +2,21 @@ from punto import Punto
 from rectangulo import Rectangulo
 
 def crear_puntos():
+    # Pedir los valores por terminal
+    x1, y1 = map(int, input("Ingrese las coordenadas de A (x y): ").split())
+    x2, y2 = map(int, input("Ingrese las coordenadas de B (x y): ").split())
+    x3, y3 = map(int, input("Ingrese las coordenadas de C (x y): ").split())
+    x4, y4 = map(int, input("Ingrese las coordenadas de D (x y): ").split())
+        
     # Crear los puntos
-    A = Punto(2, 3)
-    B = Punto(5, 5)
-    C = Punto(-3, -1)
-    D = Punto(0, 0)
+    A = Punto(x1, y1)
+    B = Punto(x2, y2)
+    C = Punto(x3, y3)
+    D = Punto(x4, y4)
+        
     return A, B, C, D
+
+
 
 def imprimir_puntos(A, B, C, D):
     # Imprimir los puntos
